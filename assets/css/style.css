@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95vh;
+    font-family: 'Arial', serif;
+    background: #333;
+}
+#scoreboard {
+    color: #fff;
+}
+.measure {
+    font-size: 12px;
+    padding-left: .5em;
+}
+#app {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(145deg, #313131, #3a3a3a);
+    box-shadow:  20px 20px 60px #2e2e2e,
+    -20px -20px 60px #3e3e3e;
+    position: relative;
+    border-radius: 4px;
+    cursor: none;
+}
+#score, #speed, #countdown {
+    display: inline-block;
+}
+.snake {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: greenyellow;
+    border-radius: 2px;
+}
+.snake::before {
+    content: '';
+    height: 3px;
+    width: 3px;
+    border-radius: 3px;
+    background: red;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+}
+.snake::after {
+    content: '';
+    height: 3px;
+    width: 3px;
+    border-radius: 3px;
+    background: red;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+}
+#food {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background: cornflowerblue;
+    border-radius: 10px;
+}
